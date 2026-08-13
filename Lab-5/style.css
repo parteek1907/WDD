@@ -1,0 +1,32 @@
+body{
+            background-color: #f4f6f8;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .external_section {
+            background-color: white;
+            width: 80%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgpa(0,0,0,0.1);            
+        }
+
+        .external_section h2{
+            color: #e97d3b;
+            text-align: center;
+        }
+
+        .external_section p{
+            font-size: 18px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .external_box {
+            background-color:#f6d8c7;
+            padding: 20px;
+            border-left: 6px solid #e97d3b;
+            margin-top: 15px;
+        }
