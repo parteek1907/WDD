@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculate Your Grades</title>
+</head>
+<body>
+  <center>
+    <h1>Calculate Your Grades</h1>
+    <p>Enter your marks for all 6 subjects</p>
+  </center>
+
+  <form id="grade-form">
+    <table border="1" cellpadding="10" cellspacing="0" align="center">
+      <tr>
+        <th>Subject Name</th>
+        <th>Internal Marks</th>
+        <th>External Marks</th>
+      </tr>
+      <tr>
+        <td><input type="text" id="subject1" placeholder="Subject 1"></td>
+        <td><input type="number" id="internal1" placeholder="Out of 50"></td>
+        <td><input type="number" id="external1" placeholder="Out of 50"></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="subject2" placeholder="Subject 2"></td>
+        <td><input type="number" id="internal2" placeholder="Out of 50"></td>
+        <td><input type="number" id="external2" placeholder="Out of 50"></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="subject3" placeholder="Subject 3"></td>
+        <td><input type="number" id="internal3" placeholder="Out of 50"></td>
+        <td><input type="number" id="external3" placeholder="Out of 50"></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="subject4" placeholder="Subject 4"></td>
+        <td><input type="number" id="internal4" placeholder="Out of 50"></td>
+        <td><input type="number" id="external4" placeholder="Out of 50"></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="subject5" placeholder="Subject 5"></td>
+        <td><input type="number" id="internal5" placeholder="Out of 50"></td>
+        <td><input type="number" id="external5" placeholder="Out of 50"></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="subject6" placeholder="Subject 6"></td>
+        <td><input type="number" id="internal6" placeholder="Out of 50"></td>
+        <td><input type="number" id="external6" placeholder="Out of 50"></td>
+      </tr>
+    </table>
+    <br>
+    <center>
+      <button type="submit">Calculate Grades</button>
+    </center>
+  </form>
+  <br>
+  
+  <center>
+    <h2>Final Result</h2>
+    <p id="total"></p>
+    <p id="percentage"></p>
+    <p id="grade"></p>
+    <br>
+    <a href="index.html">Back to Grading Criteria</a>
+  </center>
+
+  <script src="main.js"></script>
+</body>
+</html>
