@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GradePath | CGPA Goal Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">G</span> GradePath
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="calculator.html">Calculator</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a class="active" href="planner.html">Goal Planner</a>
+    </nav>
+  </header>
+  
+  <main class="page">
+    <div class="page-intro">
+      <p class="eyebrow">TURN YOUR TARGET INTO A PLAN</p>
+      <h1>CGPA Goal Planner</h1>
+      <p>Find the average GPA you need next semester to reach your overall target.</p>
+    </div>
+    
+    <div class="content-grid planner-grid">
+      <section class="panel">
+        <h2>Your current progress</h2>
+        <p class="muted">Enter your current CGPA and completed credits.</p>
+        <form id="plannerForm">
+          <label for="currentGpa">Current CGPA <span>(0–10)</span></label>
+          <input id="currentGpa" type="number" min="0" max="10" step="0.01" placeholder="e.g. 7.80" required>
+          
+          <label for="completedCredits">Credits completed so far</label>
+          <input id="completedCredits" type="number" min="0" step="0.5" placeholder="e.g. 48" required>
+          
+          <label for="nextCredits">Credits in your next semester</label>
+          <input id="nextCredits" type="number" min="0.5" step="0.5" placeholder="e.g. 20" required>
+          
+          <label for="targetGpa">Target overall CGPA <span>(0–10)</span></label>
+          <input id="targetGpa" type="number" min="0" max="10" step="0.01" placeholder="e.g. 8.20" required>
+          
+          <button class="button planner-submit" type="submit">Calculate required GPA →</button>
+        </form>
+      </section>
+      
+      <aside class="planner-result">
+        <span class="feature-icon mint">◎</span>
+        <p class="eyebrow">YOUR NEXT STEP</p>
+        <h2 id="planTitle">Your plan will appear here</h2>
+        <p id="planText">Fill in the four fields to see the average GPA needed in your next semester.</p>
+        <div class="required-score" id="requiredScore">—<small> / 10</small></div>
+        <p class="result-hint" id="planHint">You can adjust your target and calculate again anytime.</p>
+      </aside>
+    </div>
+    
+    <section class="tip-box">
+      <strong>How is this estimated?</strong>
+      <p>We use a credit-weighted average: required next GPA = (target CGPA × total credits after next semester − current CGPA × completed credits) ÷ next semester credits. This assumes your next semester is the only one being planned.</p>
+    </section>
+  </main>
+  
+  <footer>
+    GradePath <span>Made for your academic journey.</span>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
